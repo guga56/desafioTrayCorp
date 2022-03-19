@@ -80,5 +80,21 @@ namespace WebApplication1.Controllers
                 throw;
             }
         }
+
+        [EnableCors]
+        [HttpGet("{BuscarPorNome}/{nome}")]
+        public ActionResult<Produto> BuscarPorNome(string nome)
+        {
+            try
+            {
+                var nomeBuscar = iprodutoServico.BuscarProNome(nome);
+
+                return nomeBuscar;
+            }
+            catch(Exception)
+            {
+                throw;
+            }
+        }
     }
 }
