@@ -9,6 +9,6 @@ namespace Desafio.Infraestruture.Repositorio.Interface
 {
     public interface IProdutoRepositorio : IGenerciRepositorio<Produto>
     {
-
+        Produto ListarProdutoPorNome(string nome);
     }
 }

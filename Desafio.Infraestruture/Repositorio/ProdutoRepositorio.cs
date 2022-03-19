@@ -23,9 +23,6 @@ namespace Desafio.Infraestruture.Repositorio
             throw new NotFiniteNumberException();
         }
 
-        public Produto BuscarPorNome(string nome)
-        {
-            return _db.Produto.Find(nome);
-        }
+        
     }
 }
