@@ -1,4 +1,5 @@
 ﻿using Desafio.Dominio.Dominio;
+using Desafio.Infraestruture.Infraestruture;
 using Desafio.Infraestruture.Repositorio.Interface;
 using System;
 using System.Collections.Generic;
@@ -10,9 +11,21 @@ namespace Desafio.Infraestruture.Repositorio
 {
     public class ProdutoRepositorio : GenericRepositorio<Produto>, IProdutoRepositorio
     {
+        private readonly ProdutoContexto _db;
+
+        public ProdutoRepositorio()
+        {
+            _db = new ProdutoContexto();
+        }
+
         public IEnumerable<Produto> Buscar(object id)
         {
             throw new NotFiniteNumberException();
+        }
+
+        public Produto BuscarPorNome(string nome)
+        {
+            return _db.Produto.Find(nome);
         }
     }
 }
