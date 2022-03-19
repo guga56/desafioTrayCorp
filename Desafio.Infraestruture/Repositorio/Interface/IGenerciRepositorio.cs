@@ -21,7 +21,7 @@ namespace Desafio.Infraestruture.Repositorio.Interface
 
         void Atualizar(T entidade);
 
-        void Delertar(int i);
+        void Deletar(int i);
 
         void Commit();
     }

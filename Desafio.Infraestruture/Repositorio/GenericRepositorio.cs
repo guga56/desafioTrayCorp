@@ -40,7 +40,7 @@ namespace Desafio.Infraestruture.Repositorio
             _db.SaveChanges();
         }
 
-        public void Delertar(int i)
+        public void Deletar(int i)
         {
             var obj = Buscar(i);
             _db.Set<T>().Remove(obj);
