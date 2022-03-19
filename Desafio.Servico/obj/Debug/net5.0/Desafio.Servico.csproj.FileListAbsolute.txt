@@ -1,0 +1,17 @@
+C:\Users\gusta\Documents\Desafio\Desafio\Desafio.Servico\bin\Debug\net5.0\Desafio.Servico.deps.json
+C:\Users\gusta\Documents\Desafio\Desafio\Desafio.Servico\bin\Debug\net5.0\Desafio.Servico.dll
+C:\Users\gusta\Documents\Desafio\Desafio\Desafio.Servico\bin\Debug\net5.0\ref\Desafio.Servico.dll
+C:\Users\gusta\Documents\Desafio\Desafio\Desafio.Servico\bin\Debug\net5.0\Desafio.Servico.pdb
+C:\Users\gusta\Documents\Desafio\Desafio\Desafio.Servico\obj\Debug\net5.0\Desafio.Servico.csproj.AssemblyReference.cache
+C:\Users\gusta\Documents\Desafio\Desafio\Desafio.Servico\obj\Debug\net5.0\Desafio.Servico.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gusta\Documents\Desafio\Desafio\Desafio.Servico\obj\Debug\net5.0\Desafio.Servico.AssemblyInfoInputs.cache
+C:\Users\gusta\Documents\Desafio\Desafio\Desafio.Servico\obj\Debug\net5.0\Desafio.Servico.AssemblyInfo.cs
+C:\Users\gusta\Documents\Desafio\Desafio\Desafio.Servico\obj\Debug\net5.0\Desafio.Servico.csproj.CoreCompileInputs.cache
+C:\Users\gusta\Documents\Desafio\Desafio\Desafio.Servico\obj\Debug\net5.0\Desafio.Servico.dll
+C:\Users\gusta\Documents\Desafio\Desafio\Desafio.Servico\obj\Debug\net5.0\ref\Desafio.Servico.dll
+C:\Users\gusta\Documents\Desafio\Desafio\Desafio.Servico\obj\Debug\net5.0\Desafio.Servico.pdb
+C:\Users\gusta\Documents\Desafio\Desafio\Desafio.Servico\bin\Debug\net5.0\Desafio.Dominio.dll
+C:\Users\gusta\Documents\Desafio\Desafio\Desafio.Servico\bin\Debug\net5.0\Desafio.Infraestruture.dll
+C:\Users\gusta\Documents\Desafio\Desafio\Desafio.Servico\bin\Debug\net5.0\Desafio.Dominio.pdb
+C:\Users\gusta\Documents\Desafio\Desafio\Desafio.Servico\bin\Debug\net5.0\Desafio.Infraestruture.pdb
+C:\Users\gusta\Documents\Desafio\Desafio\Desafio.Servico\obj\Debug\net5.0\Desafio.Servico.csproj.CopyComplete
