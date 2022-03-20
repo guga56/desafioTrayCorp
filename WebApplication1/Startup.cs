@@ -1,4 +1,8 @@
 using Desafio.Infraestruture.Infraestruture;
+using Desafio.Infraestruture.Repositorio;
+using Desafio.Infraestruture.Repositorio.Interface;
+using Desafio.Servico.Servico;
+using Desafio.Servico.Servico.Interface;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,7 +34,12 @@ namespace WebApplication1
         {
 
             services.AddControllers();
+
+            services.AddScoped<IProdutoRepositorio, ProdutoRepositorio>();
+            services.AddScoped<IProdutoServico, ProdutoServico>();
+
             services.AddDbContext<ProdutoContexto>(opts => opts.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
 
             services.AddSwaggerGen(c =>
             {
@@ -43,6 +52,7 @@ namespace WebApplication1
         {
             if (env.IsDevelopment())
             {
+                app.UseCors();
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebApplication1 v1"));

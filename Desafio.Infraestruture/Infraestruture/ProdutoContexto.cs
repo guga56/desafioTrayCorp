@@ -11,17 +11,12 @@ namespace Desafio.Infraestruture.Infraestruture
     public class ProdutoContexto : DbContext
     {
 
-        public ProdutoContexto()
-        {
-
-        }
-
-        public ProdutoContexto(DbContextOptions options)
+        public ProdutoContexto(DbContextOptions<ProdutoContexto> options)
             : base(options)
         {
 
         }
 
-        public DbSet<Produto> Produto { get; set; }
+        public DbSet<Produto> Produtos { get; set; }
     }
 }

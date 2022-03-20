@@ -13,11 +13,6 @@ namespace Desafio.Infraestruture.Repositorio
     {
         private readonly ProdutoContexto _db;
 
-        public GenericRepositorio()
-        {
-            _db = new ProdutoContexto();
-        }
-
         public void Adicionar(T entidade)
         {
             _db.Set<T>().Add(entidade);

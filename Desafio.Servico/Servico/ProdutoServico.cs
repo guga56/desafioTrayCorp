@@ -12,7 +12,12 @@ namespace Desafio.Servico.Servico
 {
     public class ProdutoServico : IProdutoServico
     {
-        private IProdutoRepositorio iprodutoRepositorio;
+        private readonly IProdutoRepositorio iprodutoRepositorio;
+
+        public ProdutoServico(IProdutoRepositorio _iprodutoRepositorio)
+        {
+            this.iprodutoRepositorio = _iprodutoRepositorio;
+        }
 
         public void Adicionar(Produto produto)
         {

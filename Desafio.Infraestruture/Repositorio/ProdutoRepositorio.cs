@@ -13,11 +13,6 @@ namespace Desafio.Infraestruture.Repositorio
     {
         private readonly ProdutoContexto _db;
 
-        public ProdutoRepositorio()
-        {
-            _db = new ProdutoContexto();
-        }
-
         public IEnumerable<Produto> Buscar(object id)
         {
             throw new NotFiniteNumberException();
@@ -25,7 +20,7 @@ namespace Desafio.Infraestruture.Repositorio
 
         public Produto ListarProdutoPorNome(string nome)
         {
-            return _db.Produto.Where(a => a.Nome == nome).FirstOrDefault();
+            return _db.Produtos.Where(a => a.Nome == nome).FirstOrDefault();
         }
     }
 }

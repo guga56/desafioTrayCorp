@@ -1,4 +1,5 @@
 ﻿using Desafio.Dominio.Dominio;
+using Desafio.Servico.Negocio;
 using Desafio.Servico.Servico.Interface;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
@@ -16,19 +17,23 @@ namespace WebApplication1.Controllers
     {
         private readonly IProdutoServico iprodutoServico;
 
-        public ProdutoController([FromBody] IProdutoServico _iprodutoServico)
+        public ProdutoController(IProdutoServico iprodutoServico)
+        {
+            this.iprodutoServico = iprodutoServico;
+        }
+
+        public ProdutoController(IProdutoServico _iprodutoServico)
         {
             this.iprodutoServico = _iprodutoServico;
         }
 
-        [EnableCors]
         [HttpGet("ListarTudo")]
         public ActionResult<List<Produto>> ListarTudo()
         {
             try
             {
-              List<Produto> listar = null;
-
+              List<Produto> listar = new List<Produto>();
+              
               listar = iprodutoServico.ListarTudo();
 
               return listar;
@@ -39,12 +44,13 @@ namespace WebApplication1.Controllers
             }
         }
 
-        [EnableCors]
         [HttpPost("Adicionar")]
-        public void Salvar([FromBody] Produto produto)
+        public void Adicionar([FromBody] Produto produto)
         {
             try
             {
+                ProdutoNegocio produtoNegocio = new ProdutoNegocio();
+                produtoNegocio.ValorPositivo(produto);
                 iprodutoServico.Adicionar(produto);
             }
             catch(Exception)
@@ -53,7 +59,6 @@ namespace WebApplication1.Controllers
             }
         }
 
-        [EnableCors]
         [HttpPut("{Update}/{produto}")]
         public void Update([FromBody] Produto produto)
         {
@@ -67,7 +72,6 @@ namespace WebApplication1.Controllers
             }
         }
 
-        [EnableCors]
         [HttpDelete("{Deletar}/{idproduto}")]
         public void Deletar([FromForm] int idproduto)
         {
@@ -81,7 +85,6 @@ namespace WebApplication1.Controllers
             }
         }
 
-        [EnableCors]
         [HttpGet("{BuscarPorNome}/{nome}")]
         public ActionResult<Produto> BuscarPorNome(string nome)
         {
