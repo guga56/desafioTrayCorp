@@ -22,11 +22,6 @@ namespace WebApplication1.Controllers
             this.iprodutoServico = iprodutoServico;
         }
 
-        public ProdutoController(IProdutoServico _iprodutoServico)
-        {
-            this.iprodutoServico = _iprodutoServico;
-        }
-
         [HttpGet("ListarTudo")]
         public ActionResult<List<Produto>> ListarTudo()
         {
@@ -34,7 +29,7 @@ namespace WebApplication1.Controllers
             {
               List<Produto> listar = new List<Produto>();
               
-              listar = iprodutoServico.ListarTudo();
+              listar = iprodutoServico.ListarTudo().OrderBy(x => x.Nome).ToList();
 
               return listar;
             }

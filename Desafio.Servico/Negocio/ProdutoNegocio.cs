@@ -17,7 +17,7 @@ namespace Desafio.Servico.Negocio
 
             if(produto.Valor > 0)
             {
-                contexto.Produtos.Add(produto);
+                
             }
             else
             {
