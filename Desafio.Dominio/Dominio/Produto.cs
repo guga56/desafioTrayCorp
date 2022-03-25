@@ -15,10 +15,13 @@ namespace Desafio.Dominio.Dominio
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
+        [Required(ErrorMessage = "Informe o nome")]
         public string Nome { get; set; }
 
+        [Required(ErrorMessage = "Informe o estoque")]
         public string Estoque { get; set; }
 
+        [Required(ErrorMessage = "Informe o valor")]
         public int Valor { get; set; }
     }
 }

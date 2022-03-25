@@ -2,7 +2,6 @@ C:\Users\gusta\Documents\Desafio\Desafio\Desafio.Dominio\bin\Debug\net5.0\Desafi
 C:\Users\gusta\Documents\Desafio\Desafio\Desafio.Dominio\bin\Debug\net5.0\Desafio.Dominio.dll
 C:\Users\gusta\Documents\Desafio\Desafio\Desafio.Dominio\bin\Debug\net5.0\ref\Desafio.Dominio.dll
 C:\Users\gusta\Documents\Desafio\Desafio\Desafio.Dominio\bin\Debug\net5.0\Desafio.Dominio.pdb
-C:\Users\gusta\Documents\Desafio\Desafio\Desafio.Dominio\obj\Debug\net5.0\Desafio.Dominio.csproj.AssemblyReference.cache
 C:\Users\gusta\Documents\Desafio\Desafio\Desafio.Dominio\obj\Debug\net5.0\Desafio.Dominio.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\gusta\Documents\Desafio\Desafio\Desafio.Dominio\obj\Debug\net5.0\Desafio.Dominio.AssemblyInfoInputs.cache
 C:\Users\gusta\Documents\Desafio\Desafio\Desafio.Dominio\obj\Debug\net5.0\Desafio.Dominio.AssemblyInfo.cs
